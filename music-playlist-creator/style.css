@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    overflow: auto;
 }
 
 header{
-    background-color: #dad2d0  ;
+    background-color: #b1153b  ;
     padding: 10px;
     
 }
@@ -14,7 +15,6 @@ header{
     display: flex;
     justify-content: space-between;
 }
-
 
 .playlist-header-link{
     display: flex;
@@ -33,7 +33,39 @@ header{
 }
 
 .playlist-header-link a:hover{
-    color: purple;
+    color: #d6c2c6 ;
+}
+a.active{
+    font-weight: bold;
+    color: #d6c2c6 ;
+
+}
+.playlist-actions{
+    background-color: #b1153b  ;
+    color: #d6c2c6 ;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.playlist-actions-input{
+    border-radius: 15px;
+    margin: 15px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.add-playlist{
+   font-size: 25px;
+   padding-top: 3px;
+}
+
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bolder;
+    
 }
 
 #playlist-cards{
@@ -45,22 +77,23 @@ header{
 
 
 }
+
 .playlist-card{
     display: flex;
     flex-direction: column;
     width: 85%;
-    height:98%;
     overflow: auto;
     border-radius: 10px;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    content: contain;
 }
 
 .playlist-card-img{
     width: 100%;
-    height: 70%;
+    height: 65%;
     max-width: 100%;
     max-height: 100%;
-    margin: 10px;
+   margin-bottom: 10px;
 }
 
 
@@ -75,18 +108,38 @@ header{
     padding: 0;
 }
 .playlist-card h5{
-    margin: 10px;
+    margin-left: 7px;
+    margin-bottom: 3px;
 }
-
+.playlist-card h4{
+    margin-left: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
 .Heart-icon{
     color: black;
     cursor: pointer;
+    margin-left: 7px;
 }
 
 .Heart-icon.liked{
     color: palevioletred;
 }
+.card-likes{
+    display: flex;
+   position: relative;;
+}
+.edit{
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+.card-likes p{
+    margin: 0;
 
+}
 .modal-overlay{
     display: none; /* Hidden by default */
     position: fixed;
@@ -140,9 +193,43 @@ header{
     
 }
 button{
-    background-color: blue;
+    background-color: #b1153b ;
+    width: 60px;
+    height: 25px;
+    contain: content;
+    margin: 1px;
+    border-radius: 10px;
+   
 }
 
-footer{
-     background-color: #dad2d0;
+.footer{
+     background-color: #b1153b ;
+     height: 50px;
+}
+
+
+/* featured page style */
+.featured{
+
+    text-align: center;
+    display: flex;
+   
+}
+.featured-header{
+    width: 60%;
+}
+.featured-card-img{
+    margin: 20px;
+    width: 70%;
+    height: 40%;
+}
+.featured-song{
+    display: flex;
+    height: 10%;
+    margin: 15px;
+}
+
+.featured-song-info p{
+    margin: 0;
+    text-align: justify;
 }
