@@ -12,15 +12,19 @@
 <body>
     <header>
        <div class="playlist-header">
-            <h1>Music Explorer</h1>
+            <h1 class="title">MUSIC EXPLORER</h1>
             <div class="playlist-header-link">
                 <p><a href="featured.html">featured</a></p>
-                <p> <a href="index.html">all</a></p>
+                <p> <a href="index.html" class="active">all</a></p>
             </div>
        </div>
     </header>
 
     <main> 
+        <div class="playlist-actions" id="playlist-actions">
+            <input placeholder="search for playlist" class="playlist-actions-input"/>
+            <i class="fa-solid fa-plus add-playlist"></i>
+        </div>
       <div class="playlist-cards" id="playlist-cards">
 
       </div>
@@ -43,7 +47,9 @@
     </div>
 
     <footer>
-      
+        <div class="footer">
+
+        </div>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
