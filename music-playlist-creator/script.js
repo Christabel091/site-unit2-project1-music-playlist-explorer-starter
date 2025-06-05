@@ -8,14 +8,13 @@ const searchBox = document.getElementById('playlist-actions-input');
 
 function  searchForPlaylist(searchPlaylist, searchKeyword){
     const requestedPlaylists =  searchPlaylist.playlists.filter(searchPlaylist =>{
-        searchPlaylist.playlist_name.toLowerCase().includes(searchKeyword);
+        return searchPlaylist.playlist_name.toLowerCase().includes(searchKeyword);
     })
-    console.log("requested playlist rtrieved" );
-    console.log(requestedPlaylists);
+
     cards.innerHTML= '';
-    requestedPlaylists.forEach((requestedPlaylist) => {
-        loadPlaylist(requestedPlaylist);
-    })
+    searchedplaylist = {}
+    searchedplaylist.playlists = requestedPlaylists;
+    loadPlaylist(searchedplaylist);
 }
 
 
@@ -80,8 +79,12 @@ function loadModal(playlistSong){
         shuffleSongs(playlistSong.songs);
     })
 }
-
+    
 function loadPlaylist(Playlists){
+    if (Playlists.playlists.length === 0){
+         card.innerHTML = `<h1>NO PLAYLIST TO DISPLAY</h1>`;
+         return;
+    }
      Playlists.playlists.forEach(pl => {
                 const card = document.createElement('div');
                 card.classList.add('playlist-card');
