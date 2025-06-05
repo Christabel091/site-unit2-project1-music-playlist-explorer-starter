@@ -6,22 +6,47 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+       <div class="playlist-header">
+            <h1>Music Explorer</h1>
+            <div class="playlist-header-link">
+                <p><a href="featured.html">featured</a></p>
+                <p> <a href="index.html">all</a></p>
+            </div>
+       </div>
     </header>
 
     <main> 
-        <!-- Your main content here -->
+      <div class="playlist-cards" id="playlist-cards">
+
+      </div>
     </main>
 
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-head">
+                <img id="modal-image" src="" alt="Fplaylist Image">
+               <div class="modal-head-text">
+                    <p id="modal-name"></p>
+                    <p id="modal-creator"></p>
+               </div>
+            </div>
+           <div class="modal-body" id="modal-body">
+               
+           </div>
+            
+        </div>
+    </div>
+
     <footer>
-        <!-- Your footer content here -->
+      
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
+  
 </body>
 </html>
