@@ -3,6 +3,22 @@ let cards = document.getElementById('playlist-cards');
 let modalOverlay = document.getElementById('modal-overlay');
 let modalContent = document.getElementById('modal-content')
 const modalBody = document.getElementById('modal-body');
+const searchBox = document.getElementById('playlist-actions-input');
+
+
+function  searchForPlaylist(searchPlaylist, searchKeyword){
+    const requestedPlaylists =  searchPlaylist.playlists.filter(searchPlaylist =>{
+        searchPlaylist.playlist_name.toLowerCase().includes(searchKeyword);
+    })
+    console.log("requested playlist rtrieved" );
+    console.log(requestedPlaylists);
+    cards.innerHTML= '';
+    requestedPlaylists.forEach((requestedPlaylist) => {
+        loadPlaylist(requestedPlaylist);
+    })
+}
+
+
 
 function shuffleArray(arr) {
     console.log("func ran ")
@@ -25,41 +41,22 @@ function shuffleSongs(Songs){
 }
 
 function displaySongs(PlaylistSongs){
-    PlaylistSongs.forEach((song) =>{
-        const modalSong = document.createElement('div');
-        modalSong.classList.add('modal-song');
+    PlaylistSongs.forEach((song) => {
+    const modalSong = document.createElement('div');
+    modalSong.classList.add('modal-song');
 
-        const modalImage = document.createElement('img');
-        modalImage.src = song.cover_art;
-        modalImage.classList.add('modal-song-img');
-        modalSong.appendChild(modalImage);
+    modalSong.innerHTML = `
+        <img src="${song.cover_art}" class="modal-song-img">
+        <div class="modal-song-info">
+        <p class="modal-song-title">${song.title}</p>
+        <p class="modal-song-Author">${song.artist}</p>
+        <p class="modal-song-album">${song.album}</p>
+        </div>
+        <p class="modal-song-duration">${song.duration}</p>
+    `;
 
-        const modalInfo = document.createElement('div');
-        modalInfo.classList.add('modal-song-info')
-
-        const modalTitle = document.createElement('p')
-        modalTitle.classList.add('modal-song-title');
-        modalTitle.textContent = song.duration;
-        modalInfo.appendChild(modalTitle);
-
-        const modalAuthor = document.createElement('p')
-        modalAuthor.classList.add('modal-song-Author');
-        modalAuthor.textContent = song.artist;
-        modalInfo.appendChild(modalAuthor);
-
-        const modalAlbum = document.createElement('p')
-        modalAlbum.classList.add('modal-song-album');
-        modalAlbum.textContent = song.album;
-        modalInfo.appendChild(modalAlbum);
-
-        modalSong.appendChild(modalInfo);
-
-        const modalDuration = document.createElement('p')
-        modalDuration.classList.add('modal-song-duration');
-        modalTitle.textContent = song.duration;
-        modalSong.appendChild(modalDuration);
-        modalBody.appendChild(modalSong);
-    })
+    modalBody.appendChild(modalSong);
+    });
 }
 
 //function to display modal
@@ -84,17 +81,8 @@ function loadModal(playlistSong){
     })
 }
 
-
-//function to retrieve playists data and create playlist card with data
-function displayPlaylist(){
-    fetch("data/data.json").then((response)=>{
-        if (!response.ok){
-            throw new Error("network response was bad");
-        }
-        return response.json();
-    }).then(
-        (Playlists) => {
-            Playlists.playlists.forEach(pl => {
+function loadPlaylist(Playlists){
+     Playlists.playlists.forEach(pl => {
                 const card = document.createElement('div');
                 card.classList.add('playlist-card');
                 card.setAttribute('id', pl.playlistID);
@@ -115,15 +103,15 @@ function displayPlaylist(){
                 const cardLikeNum = cardLikes.querySelector('p');
 
                 cardHeartIcon.addEventListener("click", function(e) {
-                e.stopPropagation();
-                const isLiked = this.classList.contains('liked');
-                cardLikeNum.textContent = isLiked
-                    ? Number(cardLikeNum.textContent) - 1
-                    : Number(cardLikeNum.textContent) + 1;
+                    e.stopPropagation();
+                    const isLiked = this.classList.contains('liked');
+                    cardLikeNum.textContent = isLiked
+                        ? Number(cardLikeNum.textContent) - 1
+                        : Number(cardLikeNum.textContent) + 1;
 
-                this.classList.toggle('fa-solid');
-                this.classList.toggle('fa-regular');
-                this.classList.toggle('liked');
+                    this.classList.toggle('fa-solid');
+                    this.classList.toggle('fa-regular');
+                    this.classList.toggle('liked');
                 });
 
                 cards.appendChild(card);
@@ -139,13 +127,40 @@ function displayPlaylist(){
                 }
                 });
             })
+           
+}
+//function to retrieve playists data and create playlist card with data
+function displayPlaylist(){
+    fetch("data/data.json").then((response)=>{
+        if (!response.ok){
+            throw new Error("network response was bad");
+        }
+        return response.json();
+    }).then(
+        (Playlists) => {
+            loadPlaylist(Playlists);
+            searchBox.addEventListener('keydown', (event) =>{
+                const searchKeyword = searchBox.value.trim().toLowerCase();
+                if (event.key === 'Enter') {
+                    console.log("search began");
+                    searchForPlaylist(Playlists, searchKeyword);
+                }
+            })
+
+            searchBox.addEventListener('input', () => {
+                if (searchBox.value.trim() == ''){
+                    loadPlaylist(Playlists);
+                }
+            })
+
 })
+
+//function that searches for a playlist
+
 }
 
 
 
+displayPlaylist();
 
-document.addEventListener("DOMContentLoaded", () =>{
-    displayPlaylist();
-});
 
