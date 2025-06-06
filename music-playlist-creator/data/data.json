@@ -1,13 +1,259 @@
-{ "playlists": [
+{
+  "playlists": [
     {
       "playlistID": 0,
+      "playlist_name": "Sunset Vibes",
+      "playlist_creator": "DJ Aurora",
+      "playlist_art": "https://picsum.photos/id/101/200",
+      "likeCount": 15,
+      "songs": [
+        {
+          "songID": 0,
+          "title": "Golden Hour",
+          "artist": "Kacey Musgraves",
+          "album": "Golden Hour",
+          "cover_art": "https://picsum.photos/id/102/200",
+          "duration": "3:44"
+        },
+        {
+          "songID": 1,
+          "title": "Sunflower",
+          "artist": "Post Malone & Swae Lee",
+          "album": "Spider-Man: Into the Spider-Verse",
+          "cover_art": "https://picsum.photos/id/103/200",
+          "duration": "2:38"
+        },
+        {
+          "songID": 2,
+          "title": "Here Comes the Sun",
+          "artist": "The Beatles",
+          "album": "Abbey Road",
+          "cover_art": "https://picsum.photos/id/104/200",
+          "duration": "3:06"
+        },
+        {
+          "songID": 3,
+          "title": "Walking on Sunshine",
+          "artist": "Katrina & The Waves",
+          "album": "Katrina & The Waves",
+          "cover_art": "https://picsum.photos/id/105/200",
+          "duration": "3:59"
+        },
+        {
+          "songID": 4,
+          "title": "Island in the Sun",
+          "artist": "Weezer",
+          "album": "Weezer (Green Album)",
+          "cover_art": "https://picsum.photos/id/106/200",
+          "duration": "3:20"
+        }
+      ]
+    },
+    {
+      "playlistID": 1,
+      "playlist_name": "Morning Boost",
+      "playlist_creator": "Rise & Shine",
+      "playlist_art": "https://picsum.photos/id/107/200",
+      "likeCount": 30,
+      "songs": [
+        {
+          "songID": 5,
+          "title": "Wake Me Up",
+          "artist": "Avicii",
+          "album": "True",
+          "cover_art": "https://picsum.photos/id/108/200",
+          "duration": "4:09"
+        },
+        {
+          "songID": 6,
+          "title": "Happy",
+          "artist": "Pharrell Williams",
+          "album": "G I R L",
+          "cover_art": "https://picsum.photos/id/109/200",
+          "duration": "3:53"
+        },
+        {
+          "songID": 7,
+          "title": "Good Morning",
+          "artist": "Kanye West",
+          "album": "Graduation",
+          "cover_art": "https://picsum.photos/id/110/200",
+          "duration": "3:15"
+        },
+        {
+          "songID": 8,
+          "title": "Lovely Day",
+          "artist": "Bill Withers",
+          "album": "Menagerie",
+          "cover_art": "https://picsum.photos/id/111/200",
+          "duration": "4:15"
+        },
+        {
+          "songID": 9,
+          "title": "Best Day of My Life",
+          "artist": "American Authors",
+          "album": "Oh, What a Life",
+          "cover_art": "https://picsum.photos/id/112/200",
+          "duration": "3:14"
+        }
+      ]
+    },
+    {
+      "playlistID": 2,
+      "playlist_name": "Chill Beats",
+      "playlist_creator": "Lo-Fi Lounge",
+      "playlist_art": "https://picsum.photos/id/113/200",
+      "likeCount": 45,
+      "songs": [
+        {
+          "songID": 10,
+          "title": "Night Owl",
+          "artist": "Galimatias",
+          "album": "Renaissance Boy",
+          "cover_art": "https://picsum.photos/id/114/200",
+          "duration": "3:50"
+        },
+        {
+          "songID": 11,
+          "title": "Coffee",
+          "artist": "Miguel",
+          "album": "Wildheart",
+          "cover_art": "https://picsum.photos/id/115/200",
+          "duration": "4:50"
+        },
+        {
+          "songID": 12,
+          "title": "Weightless",
+          "artist": "Marconi Union",
+          "album": "Weightless",
+          "cover_art": "https://picsum.photos/id/116/200",
+          "duration": "8:00"
+        },
+        {
+          "songID": 13,
+          "title": "Cold Little Heart",
+          "artist": "Michael Kiwanuka",
+          "album": "Love & Hate",
+          "cover_art": "https://picsum.photos/id/117/200",
+          "duration": "9:58"
+        },
+        {
+          "songID": 14,
+          "title": "Intro",
+          "artist": "The xx",
+          "album": "xx",
+          "cover_art": "https://picsum.photos/id/118/200",
+          "duration": "2:07"
+        }
+      ]
+    },
+    {
+      "playlistID": 3,
+      "playlist_name": "Rock Classics",
+      "playlist_creator": "Guitar Hero",
+      "playlist_art": "https://picsum.photos/id/119/200",
+      "likeCount": 60,
+      "songs": [
+        {
+          "songID": 15,
+          "title": "Back in Black",
+          "artist": "AC/DC",
+          "album": "Back in Black",
+          "cover_art": "https://picsum.photos/id/120/200",
+          "duration": "4:15"
+        },
+        {
+          "songID": 16,
+          "title": "Smoke on the Water",
+          "artist": "Deep Purple",
+          "album": "Machine Head",
+          "cover_art": "https://picsum.photos/id/121/200",
+          "duration": "5:40"
+        },
+        {
+          "songID": 17,
+          "title": "Sweet Home Alabama",
+          "artist": "Lynyrd Skynyrd",
+          "album": "Second Helping",
+          "cover_art": "https://picsum.photos/id/122/200",
+          "duration": "4:45"
+        },
+        {
+          "songID": 18,
+          "title": "Free Bird",
+          "artist": "Lynyrd Skynyrd",
+          "album": "Pronounced 'Lĕh-'nérd 'Skin-'nérd",
+          "cover_art": "https://picsum.photos/id/123/200",
+          "duration": "9:08"
+        },
+        {
+          "songID": 19,
+          "title": "Hotel California",
+          "artist": "Eagles",
+          "album": "Hotel California",
+          "cover_art": "https://picsum.photos/id/124/200",
+          "duration": "6:30"
+        }
+      ]
+    },
+    {
+      "playlistID": 4,
+      "playlist_name": "Hip Hop Hits",
+      "playlist_creator": "Beat Master",
+      "playlist_art": "https://picsum.photos/id/125/200",
+      "likeCount": 80,
+      "songs": [
+        {
+          "songID": 20,
+          "title": "Lose Yourself",
+          "artist": "Eminem",
+          "album": "8 Mile",
+          "cover_art": "https://picsum.photos/id/126/200",
+          "duration": "5:26"
+        },
+        {
+          "songID": 21,
+          "title": "Juicy",
+          "artist": "The Notorious B.I.G.",
+          "album": "Ready to Die",
+          "cover_art": "https://picsum.photos/id/127/200",
+          "duration": "5:02"
+        },
+        {
+          "songID": 22,
+          "title": "N.Y. State of Mind",
+          "artist": "Nas",
+          "album": "Illmatic",
+          "cover_art": "https://picsum.photos/id/128/200",
+          "duration": "4:54"
+        },
+        {
+          "songID": 23,
+          "title": "C.R.E.A.M.",
+          "artist": "Wu-Tang Clan",
+          "album": "Enter the Wu-Tang (36 Chambers)",
+          "cover_art": "https://picsum.photos/id/129/200",
+          "duration": "4:12"
+        },
+        {
+          "songID": 24,
+          "title": "Alright",
+          "artist": "Kendrick Lamar",
+          "album": "To Pimp a Butterfly",
+          "cover_art": "https://picsum.photos/id/130/200",
+          "duration": "3:39"
+        }
+      ]
+    },
+    {
+      "playlistID": 5,
       "playlist_name": "Late Night Drive",
       "playlist_creator": "Melody Maven",
       "playlist_art": "https://picsum.photos/id/36/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 0,
+          "songID": 25,
           "title": "Nightcall",
           "artist": "Kavinsky",
           "album": "Nightcall",
@@ -15,7 +261,7 @@
           "duration": "4:18"
         },
         {
-          "songID": 1,
+          "songID": 26,
           "title": "Drive",
           "artist": "The Cars",
           "album": "Heartbeat City",
@@ -23,7 +269,7 @@
           "duration": "3:55"
         },
         {
-          "songID": 2,
+          "songID": 27,
           "title": "Cruisin'",
           "artist": "Smokey Robinson",
           "album": "One Heartbeat",
@@ -31,7 +277,7 @@
           "duration": "4:30"
         },
         {
-          "songID": 3,
+          "songID": 28,
           "title": "Night Moves",
           "artist": "Bob Seger",
           "album": "Night Moves",
@@ -39,7 +285,7 @@
           "duration": "5:25"
         },
         {
-          "songID": 4,
+          "songID": 29,
           "title": "Moonlight Drive",
           "artist": "The Doors",
           "album": "Strange Days",
@@ -49,14 +295,14 @@
       ]
     },
     {
-      "playlistID": 1,
+      "playlistID": 6,
       "playlist_name": "That Summer '16 Feeling",
       "playlist_creator": "Groove Guardian",
       "playlist_art": "https://picsum.photos/id/117/200",
       "likeCount": 25,
       "songs": [
         {
-          "songID": 5,
+          "songID": 30,
           "title": "One Dance",
           "artist": "Drake",
           "album": "Views",
@@ -64,7 +310,7 @@
           "duration": "2:53"
         },
         {
-          "songID": 6,
+          "songID": 31,
           "title": "Cheap Thrills",
           "artist": "Sia",
           "album": "This Is Acting",
@@ -72,7 +318,7 @@
           "duration": "3:31"
         },
         {
-          "songID": 7,
+          "songID": 32,
           "title": "Don't Let Me Down",
           "artist": "The Chainsmokers ft. Daya",
           "album": "Collage",
@@ -80,7 +326,7 @@
           "duration": "3:28"
         },
         {
-          "songID": 8,
+          "songID": 33,
           "title": "This Is What You Came For",
           "artist": "Calvin Harris ft. Rihanna",
           "album": "This Is What You Came For",
@@ -88,7 +334,7 @@
           "duration": "3:42"
         },
         {
-          "songID": 9,
+          "songID": 34,
           "title": "Ride",
           "artist": "Twenty One Pilots",
           "album": "Blurryface",
@@ -98,14 +344,14 @@
       ]
     },
     {
-      "playlistID": 2,
+      "playlistID": 7,
       "playlist_name": "Workout Beats",
       "playlist_creator": "Harmony Herald",
       "playlist_art": "https://picsum.photos/id/1077/200",
       "likeCount": 10,
       "songs": [
         {
-          "songID": 10,
+          "songID": 35,
           "title": "Eye of the Tiger",
           "artist": "Survivor",
           "album": "Eye of the Tiger",
@@ -113,7 +359,7 @@
           "duration": "4:05"
         },
         {
-          "songID": 11,
+          "songID": 36,
           "title": "Stronger",
           "artist": "Kanye West",
           "album": "Graduation",
@@ -121,7 +367,7 @@
           "duration": "5:12"
         },
         {
-          "songID": 12,
+          "songID": 37,
           "title": "Lose Yourself",
           "artist": "Eminem",
           "album": "8 Mile Soundtrack",
@@ -129,7 +375,7 @@
           "duration": "5:26"
         },
         {
-          "songID": 13,
+          "songID": 38,
           "title": "Uptown Funk",
           "artist": "Mark Ronson ft. Bruno Mars",
           "album": "Uptown Special",
@@ -137,7 +383,7 @@
           "duration": "4:30"
         },
         {
-          "songID": 14,
+          "songID": 39,
           "title": "Can't Stop the Feeling!",
           "artist": "Justin Timberlake",
           "album": "Trolls (Original Motion Picture Soundtrack)",
@@ -147,14 +393,14 @@
       ]
     },
     {
-      "playlistID": 3,
+      "playlistID": 8,
       "playlist_name": "Road Trip Anthems",
       "playlist_creator": "Playlist Pioneer",
       "playlist_art": "https://picsum.photos/id/314/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 15,
+          "songID": 40,
           "title": "Life Is a Highway",
           "artist": "Tom Cochrane",
           "album": "Mad Mad World",
@@ -162,7 +408,7 @@
           "duration": "4:26"
         },
         {
-          "songID": 16,
+          "songID": 41,
           "title": "Born to Run",
           "artist": "Bruce Springsteen",
           "album": "Born to Run",
@@ -170,7 +416,7 @@
           "duration": "4:30"
         },
         {
-          "songID": 17,
+          "songID": 42,
           "title": "Take It Easy",
           "artist": "Eagles",
           "album": "Eagles",
@@ -178,7 +424,7 @@
           "duration": "3:31"
         },
         {
-          "songID": 18,
+          "songID": 43,
           "title": "Route 66",
           "artist": "Chuck Berry",
           "album": "Get Your Kicks on Route 66",
@@ -186,7 +432,7 @@
           "duration": "2:53"
         },
         {
-          "songID": 19,
+          "songID": 44,
           "title": "On the Road Again",
           "artist": "Willie Nelson",
           "album": "Honeysuckle Rose",
@@ -196,14 +442,14 @@
       ]
     },
     {
-      "playlistID": 4,
+      "playlistID": 9,
       "playlist_name": "Boss Chick Energy",
       "playlist_creator": "Tempo Tactician",
       "playlist_art": "https://picsum.photos/id/449/200",
       "likeCount": 100,
       "songs": [
         {
-          "songID": 20,
+          "songID": 45,
           "title": "Run the World (Girls)",
           "artist": "Beyoncé",
           "album": "4",
@@ -211,7 +457,7 @@
           "duration": "3:56"
         },
         {
-          "songID": 21,
+          "songID": 46,
           "title": "I'm Every Woman",
           "artist": "Chaka Khan",
           "album": "Chaka",
@@ -219,7 +465,7 @@
           "duration": "4:07"
         },
         {
-          "songID": 22,
+          "songID": 47,
           "title": "Independent Women, Pt. 1",
           "artist": "Destiny's Child",
           "album": "Survivor",
@@ -227,7 +473,7 @@
           "duration": "3:41"
         },
         {
-          "songID": 23,
+          "songID": 48,
           "title": "Confident",
           "artist": "Demi Lovato",
           "album": "Confident",
@@ -235,7 +481,7 @@
           "duration": "3:25"
         },
         {
-          "songID": 24,
+          "songID": 49,
           "title": "Feeling Myself",
           "artist": "Nicki Minaj ft. Beyoncé",
           "album": "The Pinkprint",
@@ -245,14 +491,14 @@
       ]
     },
     {
-      "playlistID": 5,
+      "playlistID": 10,
       "playlist_name": "Rainy Nights",
       "playlist_creator": "Sonic Sage",
       "playlist_art": "https://picsum.photos/id/115/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 25,
+          "songID": 50,
           "title": "Purple Rain",
           "artist": "Prince",
           "album": "Purple Rain",
@@ -260,7 +506,7 @@
           "duration": "8:41"
         },
         {
-          "songID": 26,
+          "songID": 51,
           "title": "November Rain",
           "artist": "Guns N' Roses",
           "album": "Use Your Illusion I",
@@ -268,7 +514,7 @@
           "duration": "8:57"
         },
         {
-          "songID": 27,
+          "songID": 52,
           "title": "Riders on the Storm",
           "artist": "The Doors",
           "album": "L.A. Woman",
@@ -276,7 +522,7 @@
           "duration": "7:14"
         },
         {
-          "songID": 28,
+          "songID": 53,
           "title": "I Can't Stand the Rain",
           "artist": "Ann Peebles",
           "album": "I Can't Stand the Rain",
@@ -284,7 +530,7 @@
           "duration": "2:31"
         },
         {
-          "songID": 29,
+          "songID": 54,
           "title": "Set Fire to the Rain",
           "artist": "Adele",
           "album": "21",
@@ -294,14 +540,14 @@
       ]
     },
     {
-      "playlistID": 6,
+      "playlistID": 11,
       "playlist_name": "90's R&B",
       "playlist_creator": "Vinyl Virtuoso",
       "playlist_art": "https://picsum.photos/id/815/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 30,
+          "songID": 55,
           "title": "No Diggity",
           "artist": "Blackstreet ft. Dr. Dre",
           "album": "Another Level",
@@ -309,7 +555,7 @@
           "duration": "5:06"
         },
         {
-          "songID": 31,
+          "songID": 56,
           "title": "Waterfalls",
           "artist": "TLC",
           "album": "CrazySexyCool",
@@ -317,7 +563,7 @@
           "duration": "4:39"
         },
         {
-          "songID": 32,
+          "songID": 57,
           "title": "Creep",
           "artist": "TLC",
           "album": "CrazySexyCool",
@@ -325,7 +571,7 @@
           "duration": "4:29"
         },
         {
-          "songID": 33,
+          "songID": 58,
           "title": "On Bended Knee",
           "artist": "Boyz II Men",
           "album": "II",
@@ -333,7 +579,7 @@
           "duration": "4:05"
         },
         {
-          "songID": 34,
+          "songID": 59,
           "title": "Fantasy",
           "artist": "Mariah Carey",
           "album": "Daydream",
@@ -343,14 +589,14 @@
       ]
     },
     {
-      "playlistID": 7,
+      "playlistID": 12,
       "playlist_name": "Nothing But The Classics",
       "playlist_creator": "Echo Enthusiast",
       "playlist_art": "https://picsum.photos/id/22/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 35,
+          "songID": 60,
           "title": "Bohemian Rhapsody",
           "artist": "Queen",
           "album": "A Night at the Opera",
@@ -358,7 +604,7 @@
           "duration": "5:55"
         },
         {
-          "songID": 36,
+          "songID": 61,
           "title": "Hotel California",
           "artist": "Eagles",
           "album": "Hotel California",
@@ -366,7 +612,7 @@
           "duration": "6:30"
         },
         {
-          "songID": 37,
+          "songID": 62,
           "title": "Stairway to Heaven",
           "artist": "Led Zeppelin",
           "album": "Led Zeppelin IV",
@@ -374,7 +620,7 @@
           "duration": "8:02"
         },
         {
-          "songID": 38,
+          "songID": 63,
           "title": "Sweet Child o' Mine",
           "artist": "Guns N' Roses",
           "album": "Appetite for Destruction",
@@ -382,7 +628,7 @@
           "duration": "5:55"
         },
         {
-          "songID": 39,
+          "songID": 64,
           "title": "Imagine",
           "artist": "John Lennon",
           "album": "Imagine",
@@ -392,14 +638,14 @@
       ]
     },
     {
-      "playlistID": 8,
+      "playlistID": 13,
       "playlist_name": "Ohh That Baseline",
       "playlist_creator": "Bassline Buddy",
       "playlist_art": "https://picsum.photos/id/836/200",
       "likeCount": 0,
       "songs": [
         {
-          "songID": 40,
+          "songID": 65,
           "title": "Another One Bites the Dust",
           "artist": "Queen",
           "album": "The Game",
@@ -407,7 +653,7 @@
           "duration": "3:36"
         },
         {
-          "songID": 41,
+          "songID": 66,
           "title": "Billie Jean",
           "artist": "Michael Jackson",
           "album": "Thriller",
@@ -415,7 +661,7 @@
           "duration": "4:54"
         },
         {
-          "songID": 42,
+          "songID": 67,
           "title": "Superstition",
           "artist": "Stevie Wonder",
           "album": "Talking Book",
@@ -423,7 +669,7 @@
           "duration": "4:26"
         },
         {
-          "songID": 43,
+          "songID": 68,
           "title": "Smooth Criminal",
           "artist": "Michael Jackson",
           "album": "Bad",
@@ -431,7 +677,7 @@
           "duration": "4:17"
         },
         {
-          "songID": 44,
+          "songID": 69,
           "title": "Money for Nothing",
           "artist": "Dire Straits",
           "album": "Brothers in Arms",

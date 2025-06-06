@@ -11,6 +11,9 @@ const newArtist= document.getElementById('new-artist-name');
 const newSongs = document.getElementById('new-songs');
 const searchBtn = document.querySelector('.search-icon')
 const sortOptions = document.getElementById('sort-options');
+
+
+
 function  searchForPlaylist(searchPlaylist, searchKeyword){
     const requestedPlaylists =  searchPlaylist.playlists.filter(searchPlaylist =>{
         return searchPlaylist.playlist_name.toLowerCase().includes(searchKeyword);
@@ -84,7 +87,8 @@ function loadModal(playlistSong){
         shuffleSongs(playlistSong.songs);
     })
 }
-    
+
+//function to load playlist card into dom
 function loadPlaylist(Playlists){
     if (Playlists.playlists.length === 0){
          cards.innerHTML = `<h1 class="No-playlists"> NO PLAYLIST TO DISPLAY </h1>`;
@@ -172,7 +176,9 @@ function loadPlaylist(Playlists){
     })
            
 }
-//function to retrieve playists data and create playlist card with data
+
+
+//function to retrieve playists data (Entry function)
 function displayPlaylist(){
     fetch("data/data.json").then((response)=>{
         if (!response.ok){
@@ -226,7 +232,7 @@ function displayPlaylist(){
                             duration: "3:30"
                         };
                     })
-                    .filter(song => song); // remove nulls
+                    .filter(song => song); 
 
                 if (name && artist && songsArray.length) {
                     let newPlaylist = {
@@ -234,7 +240,7 @@ function displayPlaylist(){
                         playlist_name: name,
                         playlist_creator: artist,
                         likeCount: 0,
-                        playlist_art: "./assets/img/playlist.png",
+                        playlist_art: 'https://picsum.photos/seed/picsum/200/300',
                         songs: songsArray
                     };
 
@@ -247,30 +253,30 @@ function displayPlaylist(){
                     alert("Please fill in all fields and use correct song format.");
                 }
             });
-        //sort playlist
-        sortOptions.addEventListener('change', () => {
-            const sortBy = sortOptions.value;
-            const sortedPlaylist = Object.values(currentPlaylist.playlists);
-            console.log(sortedPlaylist); 
-            if (sortBy === 'AZ'){
-                sortedPlaylist.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
-                console.log('decision made');
-            }else  if (sortBy === 'ZA'){
-                sortedPlaylist.sort((a, b) => b.playlist_name.localeCompare(a.playlist_name));
-                console.log('decision made');
-            }else  if (sortBy === 'liked'){
-                sortedPlaylist.sort((a, b) => b.likeCount-a.likeCount);
-            }
-            cards.innerHTML ='';
-            loadPlaylist({playlists:sortedPlaylist});
-        })
 
-
-    })
+            //sort playlist
+            sortOptions.addEventListener('change', () => {
+                const sortBy = sortOptions.value;
+                const sortedPlaylist = Object.values(currentPlaylist.playlists);
+                console.log(sortedPlaylist); 
+                if (sortBy === 'AZ'){
+                    sortedPlaylist.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
+                    console.log('decision made');
+                }else  if (sortBy === 'ZA'){
+                    sortedPlaylist.sort((a, b) => b.playlist_name.localeCompare(a.playlist_name));
+                    console.log('decision made');
+                }else  if (sortBy === 'liked'){
+                    sortedPlaylist.sort((a, b) => b.likeCount-a.likeCount);
+                }
+                cards.innerHTML ='';
+                loadPlaylist({playlists:sortedPlaylist});
+            })
+        }
+    )
 }
 
 
-
+//calling main/starter function
 displayPlaylist();
 
 

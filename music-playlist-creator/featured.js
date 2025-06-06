@@ -14,17 +14,17 @@ function loadFeaturedPlaylist() {
             const randomPlaylist = Math.floor(Math.random() * Playlists.playlists.length);
             const playlist = Playlists.playlists[randomPlaylist];
 
-            // Clear existing content
+            
             featuredHeader.innerHTML = '';
             featuredSongs.innerHTML = '';
 
-            // Add featured header
+           
             featuredHeader.innerHTML = `
                 <img src="${playlist.playlist_art}" class="featured-card-img">
                 <h4 class="featured-card-title">${playlist.playlist_name}</h4>
             `;
 
-            // Add songs
+           
             playlist.songs.forEach((song) => {
                 featuredSongs.innerHTML += `
                     <div class="featured-song">

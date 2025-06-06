@@ -22,14 +22,14 @@
 
     <main> 
         <div class="playlist-actions" id="playlist-actions">
-            <div class="sort">
-                <select id="sort-options">
-                    <option value=""> SORT PLAYLIST BY</option>
-                    <option value="AZ"> Ascending order(A-Z)</option>
-                    <option value="ZA"> Descending order(Z-A)</option>
-                    <option value="liked">Number of Likes</option>
-                </select>
-            </div>
+            
+            <select id="sort-options">
+                <option value=""> SORT PLAYLIST BY</option>
+                <option value="AZ"> Ascending order(A-Z)</option>
+                <option value="ZA"> Descending order(Z-A)</option>
+                <option value="liked">Number of Likes</option>
+            </select>
+            
             <div class="change">
                 <input placeholder="search for playlist" class="playlist-actions-input" id="playlist-actions-input"/>
                 <i class="fa-solid fa-magnifying-glass search-icon" title="search for a playlist"></i>
@@ -45,7 +45,7 @@
                             <input id="new-artist-name" type="text" placeholder="Artist" />
                             <br/>
                             <label>SONGS</label>
-                            <textarea id="new-songs" class="new-songs" type="text" placeholder="Songs, artist (comma-separated)-ikbuhvbkegunrdebklhldhkguntghjvjA song and an artist on it's own line"></textarea>
+                            <textarea id="new-songs" class="new-songs" type="text" placeholder="Songs, artist (comma-separated) Each song and artist on its own line"></textarea>
                             <br/>
                             <button id="form-submit">Save</button>
                     </div>
