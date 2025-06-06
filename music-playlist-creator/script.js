@@ -257,6 +257,7 @@ function displayPlaylist(){
             //sort playlist
             sortOptions.addEventListener('change', () => {
                 const sortBy = sortOptions.value;
+                console.log(sortBy);
                 const sortedPlaylist = Object.values(currentPlaylist.playlists);
                 console.log(sortedPlaylist); 
                 if (sortBy === 'AZ'){

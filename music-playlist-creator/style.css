@@ -164,7 +164,7 @@ select:focus {
 }
 
 .Heart-icon.liked{
-    color: palevioletred;
+    color: black;
 }
 .card-likes{
     display: flex;
