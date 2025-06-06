@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f8ebed;
     overflow: auto;
 }
 
 header{
-    background-color: #b1153b  ;
+    background-color: #d24568  ;
     padding: 10px;
     
 }
@@ -41,7 +41,7 @@ a.active{
 
 }
 .playlist-actions{
-    background-color: #b1153b  ;
+    background-color: #d24568;
     color: #d6c2c6 ;
     display: flex;
     justify-content: space-between;
@@ -70,6 +70,8 @@ label{
 
 .add-playlist{
    font-size: 35px;
+   margin-left: 100px;
+   margin-bottom: 0;
    
 }
 .change{
@@ -95,7 +97,7 @@ select:focus {
 }
 
 #form-submit{
-    background-color: #b1153b;
+    background-color: #d24568;
     padding: 15px;
 }
 .title{
@@ -120,7 +122,7 @@ select:focus {
     width: 85%;
     overflow: auto;
     border-radius: 10px;
-    background-color: #f8ebed;
+    background-color: #d24568;
     box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
     content: contain;
 }
@@ -270,7 +272,7 @@ select:focus {
     white-space: nowrap;
 }
 #button{
-    background-color: #b1153b ;
+    background-color: #d24568 ;
     width: 78px;
     height: 25px;
     contain: content;
@@ -281,7 +283,7 @@ select:focus {
 }
 
 .footer{
-     background-color: #b1153b ;
+     background-color: #d24568 ;
      height: 50px;
      white-space: nowrap;
 }
