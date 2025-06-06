@@ -44,7 +44,7 @@ a.active{
     background-color: #b1153b  ;
     color: #d6c2c6 ;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
     padding-top: 0;
 }
@@ -52,9 +52,12 @@ a.active{
     color: black;
     text-align: center;
 }
+.sort{
+   margin-top: 16px;
+}
 label{
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 
@@ -68,13 +71,27 @@ label{
 .search-icon{
     color: #d6c2c6 ;
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 18px;
     margin-right: 25px;
     font-size: 20px;
 }
+
 .add-playlist{
-   font-size: 28px;
-   padding-top: 1px;
+   font-size: 30px;
+   padding-top: 5px;
+   
+}
+select {
+    border: 2px solid black;
+    background: #eee;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+select:hover,
+select:focus {
+    background: #ddd;
 }
 
 #form-submit{
@@ -82,10 +99,8 @@ label{
     padding: 15px;
 }
 .title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
-    
 }
 
 #playlist-cards{
