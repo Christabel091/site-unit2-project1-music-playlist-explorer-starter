@@ -48,19 +48,39 @@ a.active{
     padding: 10px;
     padding-top: 0;
 }
+.playlist-actions h1{
+    color: black;
+    text-align: center;
+}
+label{
+    color: black;
+    font-weight: bold;
+}
+
 
 .playlist-actions-input{
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 15px;
     margin-top: 0;
     padding: 5px;
+    margin-right: 0;
 }
-
+.search-icon{
+    color: #d6c2c6 ;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 25px;
+    font-size: 20px;
+}
 .add-playlist{
-   font-size: 25px;
-   padding-top: 3px;
+   font-size: 28px;
+   padding-top: 1px;
 }
 
+#form-submit{
+    background-color: #b1153b;
+    padding: 15px;
+}
 .title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
@@ -73,7 +93,8 @@ a.active{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     box-sizing: border-box;
-    margin: 15px;
+    margin: 50px;
+    width: 60;
 
 
 }
@@ -110,11 +131,13 @@ a.active{
 .playlist-card h5{
     margin-left: 7px;
     margin-bottom: 3px;
+    white-space: nowrap;
 }
 .playlist-card h4{
     margin-left: 7px;
     margin-top: 7px;
     margin-bottom: 7px;
+    white-space: nowrap;
 }
 .Heart-icon{
     color: black;
@@ -140,7 +163,21 @@ a.active{
     margin: 0;
 
 }
-.modal-overlay{
+.form-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+   
+}
+.new-songs{
+    min-height: 200px;
+}
+.form-body input{
+   height: 30px;
+   border-radius: 5px;
+}
+.modal-overlay, .form{
     display: none; /* Hidden by default */
     position: fixed;
    justify-content: center;
@@ -154,7 +191,7 @@ a.active{
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-content{
+.modal-content, .form-content{
     display: none; 
     flex-direction: column;
     border-radius: 20px;
@@ -164,19 +201,29 @@ a.active{
     width: 45%; 
     height: 80%;
    background-color: #dad2d0;
+   content: contain;
+   overflow: auto;
 }
+
+
 .modal-head{
     display: flex;
     height: 20%;
+    overflow: auto;
+    margin-bottom: 10px;
 }
 
 .modal-head-text{
     display: flex;
     flex-direction: column;
 }
-
+#modal-name, #modal-creator{
+    padding: 0;
+    margin: 8px;
+    white-space: nowrap;
+}
 .modal-body{
-    height: 80%;
+    
     overflow: auto;
 }
 .modal-song{
@@ -184,29 +231,47 @@ a.active{
     display: flex;
     margin-bottom: 10px;
     background-color: whitesmoke;
-}
-
-.modal-song-img{
-    width: 15%;
-    height: 15%;
-    max-height: 100%;
+    align-items: center;
+    
     
 }
-button{
+.modal-song-info p{
+    margin: 3px;
+    margin-left: 12px;
+}
+.modal-song-img{
+    width: 16%;
+    height: 100%;
+    max-height: 100%;
+   
+    
+}
+
+.modal-song-duration{
+    text-align: end;
+    width: 100px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+#button{
     background-color: #b1153b ;
-    width: 60px;
+    width: 78px;
     height: 25px;
     contain: content;
-    margin: 1px;
-    border-radius: 10px;
-   
+    margin: 5px;
+    border-radius: 8px;
+   margin-left: 0;
+   margin-bottom: 10px;
 }
 
 .footer{
      background-color: #b1153b ;
      height: 50px;
+     white-space: nowrap;
 }
-
+footer{
+    flex: 1;
+}
 
 /* featured page style */
 .featured{
