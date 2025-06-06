@@ -11,7 +11,6 @@ const newArtist= document.getElementById('new-artist-name');
 const newSongs = document.getElementById('new-songs');
 const searchBtn = document.querySelector('.search-icon')
 const sortOptions = document.getElementById('sort-options');
-
 function  searchForPlaylist(searchPlaylist, searchKeyword){
     const requestedPlaylists =  searchPlaylist.playlists.filter(searchPlaylist =>{
         return searchPlaylist.playlist_name.toLowerCase().includes(searchKeyword);
@@ -126,7 +125,7 @@ function loadPlaylist(Playlists){
                     this.classList.toggle('fa-regular');
                     this.classList.toggle('liked');
                 });
-                 console.log(Playlists);
+                
                 //delete playlist
                 const trashIcon = card.querySelector('.delete');
                 trashIcon.addEventListener('click', (event) => {
@@ -250,12 +249,13 @@ function displayPlaylist(){
         //sort playlist
         sortOptions.addEventListener('change', () => {
             const sortBy = sortOptions.value;
-            const sortedPlaylist = [...currentPlaylist.playlists];
+            const sortedPlaylist = Object.values(currentPlaylist.playlists);
+            console.log(sortedPlaylist); 
             if (sortBy === 'AZ'){
-                sortedPlaylist.sort((a, b) => a.playlist_name.localeCompare(b,playlist_name));
+                sortedPlaylist.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
                 console.log('decision made');
             }else  if (sortBy === 'ZA'){
-                sortedPlaylist.sort((a, b) => b.playlist_name.localeCompare(a,playlist_name));
+                sortedPlaylist.sort((a, b) => b.playlist_name.localeCompare(a.playlist_name));
                 console.log('decision made');
             }else  if (sortBy === 'liked'){
                 sortedPlaylist.sort((a, b) => b.likeCount-a.likeCount);
