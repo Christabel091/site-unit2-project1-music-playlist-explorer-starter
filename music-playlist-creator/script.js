@@ -87,7 +87,7 @@ function loadModal(playlistSong){
     
 function loadPlaylist(Playlists){
     if (Playlists.playlists.length === 0){
-         cards.innerHTML = `<h1> NO PLAYLIST TO DISPLAY </h1>`;
+         cards.innerHTML = `<h1 class="No-playlists"> NO PLAYLIST TO DISPLAY </h1>`;
 
          return;
     }
@@ -222,7 +222,7 @@ function displayPlaylist(){
                             title: title,
                             artist: songArtist,
                             album: "Unknown Album",
-                            cover_art: 'https://picsum.photos/id/${Math.floor(Math.random() * 100)}/200',
+                            cover_art: './assets/img/song.png',
                             duration: "3:30"
                         };
                     })
@@ -234,11 +234,12 @@ function displayPlaylist(){
                         playlist_name: name,
                         playlist_creator: artist,
                         likeCount: 0,
-                        playlist_art: "./assets/img/song.png",
+                        playlist_art: "./assets/img/playlist.png",
                         songs: songsArray
                     };
 
                     currentPlaylist.playlists.push(newPlaylist);
+                    cards.innerHTML='';
                     loadPlaylist(currentPlaylist);
                     form.style.display = "none";
                     formContent.style.display = "none";
