@@ -4,7 +4,7 @@ Submitted by: **Christabel Gosiorah Obi-Nwosu**
 
 Estimated time spent: **15** hours spent in total
 
-Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://github.com/Christabel091/site-unit2-project1-music-playlist-explorer-starter)
+Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-gdtq.onrender.com/)
 
 ### Application Features
 
