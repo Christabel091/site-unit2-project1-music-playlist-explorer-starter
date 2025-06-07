@@ -153,6 +153,8 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
+- i successfully implemented both mvp and stretch features and i like how well alligned people's text and elemnt were but we asked them for inisghts and were given.
+
 ### Open-source libraries used
 
 [font-awesome] (https://fontawesome.com/)
